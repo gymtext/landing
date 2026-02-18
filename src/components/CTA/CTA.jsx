@@ -4,9 +4,9 @@ import AnimatedSection from '../shared/AnimatedSection'
 import styles from './CTA.module.css'
 
 const communities = [
-  { flag: '\u{1F1EE}\u{1F1F3}', label: 'India / Global', href: 'https://t.me/gymtext_bot' },
-  { flag: '\u{1F1FA}\u{1F1E6}', label: 'Ukraine', href: 'https://t.me/gymtext_bot' },
-  { flag: '\u{1F1E7}\u{1F1F7}', label: 'Brazil', href: 'https://t.me/gymtext_bot' },
+  { flag: '\u{1F1EE}\u{1F1F3}', label: 'India / Global', href: 'https://t.me/gymtext_en' },
+  { flag: '\u{1F1FA}\u{1F1E6}', label: 'Ukraine', href: 'https://t.me/gymtext_ua' },
+  { flag: '\u{1F1E7}\u{1F1F7}', label: 'Brazil', href: 'https://t.me/gymtext_br' },
 ]
 
 function StaggeredPill({ community, index }) {
