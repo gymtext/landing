@@ -19,9 +19,10 @@ export default function Navbar() {
       transition={{ duration: 0.3, delay: 0.5 }}
     >
       <div className={styles.inner}>
-        <div className={styles.logo}>
-          GYMTEXT<span className={styles.logoDot}>.</span>
-        </div>
+        <a href="/" className={styles.logo}>
+          <img src="./favicon.svg" alt="GymText" className={styles.logoIcon} />
+          GYMTEXT
+        </a>
         <a href="https://t.me/gymtext_bot" target="_blank" rel="noopener noreferrer" className={styles.cta}>
           Start Free
         </a>

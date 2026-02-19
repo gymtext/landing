@@ -6,6 +6,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <hr className={styles.rule} />
       <AnimatedSection as="div" className={styles.inner}>
+        <img src="./favicon.svg" alt="GymText" className={styles.logoIcon} />
         <p className={styles.tagline}>
           Free forever. No app to download. Just Telegram.
         </p>
