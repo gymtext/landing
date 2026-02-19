@@ -10,9 +10,9 @@ const stats = [
 ]
 
 const cards = [
-  'Branded image example 1',
-  'Branded image example 2',
-  'Branded image example 3',
+  { src: '/img_info_1.jpg', alt: 'Workout infographic example 1' },
+  { src: '/img_info_2.jpg', alt: 'Workout infographic example 2' },
+  { src: '/img_info_3.JPG', alt: 'Workout infographic example 3' },
 ]
 
 function StaggeredCard({ children, index }) {
@@ -50,9 +50,14 @@ export default function SocialProof() {
         </AnimatedSection>
 
         <div className={styles.grid}>
-          {cards.map((label, i) => (
-            <StaggeredCard key={label} index={i}>
-              <span className={styles.cardLabel}>{label}</span>
+          {cards.map((card, i) => (
+            <StaggeredCard key={card.src} index={i}>
+              <img
+                className={styles.cardImage}
+                src={card.src}
+                alt={card.alt}
+                loading="lazy"
+              />
             </StaggeredCard>
           ))}
         </div>

@@ -198,27 +198,11 @@
   color: var(--color-bg);
 }
 
-/* Mock stats inside the "after" card */
-.mockStats {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.mockLine {
-  display: block;
-  width: 64px;
-  height: 3px;
-  background: var(--color-border);
-  border-radius: 2px;
-}
-
-.mockValue {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--color-accent);
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
 }
 
 .arrow {

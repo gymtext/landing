@@ -1,5 +1,4 @@
 import { motion } from 'motion/react'
-import GifPlaceholder from '../shared/GifPlaceholder'
 import TelegramButton from '../shared/TelegramButton'
 import styles from './Hero.module.css'
 
@@ -97,7 +96,14 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
         >
-          <GifPlaceholder label="Workout logging demo GIF" />
+          <video
+            className={styles.demoVideo}
+            src="/logging.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
         </motion.div>
       </div>
     </section>

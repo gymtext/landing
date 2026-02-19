@@ -80,6 +80,15 @@
   justify-content: center;
 }
 
+.demoVideo {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+}
+
 @media (max-width: 1023px) {
   .hero {
     padding-top: calc(var(--nav-height) + var(--space-12));

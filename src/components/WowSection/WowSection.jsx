@@ -64,10 +64,11 @@ function TransformVisual() {
     >
       <div className={styles.beforeAfter}>
         <div className={styles.card}>
-          <div className={styles.cardInner}>
-            <span className={styles.cardIcon}>🤳</span>
-            <span className={styles.cardLabel}>Your photo</span>
-          </div>
+          <img
+            className={styles.cardImage}
+            src="/pull-ups.png"
+            alt="Your gym photo"
+          />
           <span className={styles.cardTag}>Before</span>
         </div>
 
@@ -78,15 +79,11 @@ function TransformVisual() {
         </div>
 
         <div className={`${styles.card} ${styles.cardAccent}`}>
-          <div className={styles.cardInner}>
-            <div className={styles.mockStats}>
-              <span className={styles.mockLine} />
-              <span className={styles.mockLine} />
-              <span className={styles.mockValue}>12 sets</span>
-              <span className={styles.mockValue}>45 min</span>
-            </div>
-            <span className={styles.cardLabel}>Infographic</span>
-          </div>
+          <img
+            className={styles.cardImage}
+            src="/pull-ups-infographic.jpg"
+            alt="Generated infographic"
+          />
           <span className={styles.cardTagAccent}>After</span>
         </div>
       </div>
