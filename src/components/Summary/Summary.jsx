@@ -2,6 +2,7 @@ import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
 import AnimatedSection from '../shared/AnimatedSection'
 import TelegramButton from '../shared/TelegramButton'
+import VideoSpinner from '../shared/VideoSpinner'
 import styles from './Summary.module.css'
 
 function VideoPlayer() {
@@ -16,7 +17,7 @@ function VideoPlayer() {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
     >
-      <video
+      <VideoSpinner
         className={styles.video}
         src="https://gymtext-public.ams3.cdn.digitaloceanspaces.com/summary.mp4"
         autoPlay

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import TelegramButton from '../shared/TelegramButton'
+import VideoSpinner from '../shared/VideoSpinner'
 import styles from './Hero.module.css'
 
 const wordReveal = {
@@ -96,7 +97,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
         >
-          <video
+          <VideoSpinner
             className={styles.demoVideo}
             src="https://gymtext-public.ams3.cdn.digitaloceanspaces.com/logging.mp4"
             autoPlay
